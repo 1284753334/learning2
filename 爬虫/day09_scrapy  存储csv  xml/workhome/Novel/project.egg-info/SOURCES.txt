@@ -1,0 +1,15 @@
+setup.py
+Novel/__init__.py
+Novel/items.py
+Novel/middlewares.py
+Novel/pipelines.py
+Novel/run.py
+Novel/settings.py
+Novel/spiders/__init__.py
+Novel/spiders/novel.py
+Novel/spiders/novel2.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

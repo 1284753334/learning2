@@ -1,0 +1,23 @@
+﻿
+<!-- 方法一 escape   unescape  加密和解密  -->
+<!-- 把符号 和 汉字  加密 和 解密 达到 迷惑人的目的  -->
+<script type="text/javascript">
+var test1='Hello 爬虫!'
+//加密
+test1=escape(test1)
+//把字符串写入document文档中  即  print 输出显示
+document.write (test1 + "<br />")
+// 解密
+test1=unescape(test1)
+// 写入文档中  即  print 输出显示
+document.write(test1 + "<br />")
+
+var test1="alert('Hello 爬虫!')"
+// 加密  也写到 document 文档中  即  print 输出显示
+test1=escape(test1)
+document.write (test1 + "<br />")
+// eval  计算函数，执行其中的 script  ,,也可以起到 效果与  混肴相似 ，也能起到压缩的效果
+
+
+eval(test1)
+</script>

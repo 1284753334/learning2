@@ -1,0 +1,2258 @@
+2020-11-07 14:03:22 [scrapy.utils.log] INFO: Scrapy 2.3.0 started (bot: Novel)
+2020-11-07 14:03:22 [scrapy.utils.log] INFO: Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.4 (tags/v3.8.4:dfa645a, Jul 13 2020, 16:46:45) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.1, Platform Windows-10-10.0.18362-SP0
+2020-11-07 14:03:22 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-11-07 14:03:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Novel',
+ 'LOG_FILE': 'logs\\Novel\\novel\\2020-11-07T14_03_09.log',
+ 'NEWSPIDER_MODULE': 'Novel.spiders',
+ 'SPIDER_MODULES': ['Novel.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko)'}
+2020-11-07 14:03:22 [scrapy.extensions.telnet] INFO: Telnet Password: 0a226cedc4c58cc4
+2020-11-07 14:03:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-11-07 14:03:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-11-07 14:03:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-11-07 14:03:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['Novel.pipelines.NovelPipeline', 'Novel.pipelines.dbNovelPipeline']
+2020-11-07 14:03:22 [scrapy.core.engine] INFO: Spider opened
+2020-11-07 14:03:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-11-07 14:03:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-11-07 14:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_1.html> (referer: None)
+2020-11-07 14:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_2.html> (referer: https://www.quanben.net/list/1_1.html)
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '七了个九',
+ 'name': '我带幼崽搞基建',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304389/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '雲曦阳霄',
+ 'name': '太一真衍',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303779/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '落笔书写江山',
+ 'name': '穿越艾泽拉斯的道士',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295213/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '倔强的小白鼠',
+ 'name': '我想有套房',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300182/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '小猫卡克',
+ 'name': '踏圣途',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300684/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '寂无霜',
+ 'name': '极致灵气',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299922/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '时明镜',
+ 'name': '一切从锦衣卫开始',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303395/'}
+2020-11-07 14:03:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '千寻月',
+ 'name': '永恒圣帝',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/31/31867/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '游戏文字',
+ 'name': '开局我是项羽',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300723/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '商角',
+ 'name': '桀夫难驯',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289797/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '乘风御剑',
+ 'name': '剑仙三千万',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299932/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '木正',
+ 'name': '玄燕',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300315/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '六道沉沦',
+ 'name': '剑剑超神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301270/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '永恒之火',
+ 'name': '众神世界',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/287/287803/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '龙不相',
+ 'name': '洪荒：我在苏府当家丁',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304522/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '我就要睡睡睡',
+ 'name': '农家娘子好种田',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301396/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '北冥鱼不飞',
+ 'name': '异世之万界召唤系统',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/131/131674/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '刀尖上来回跳舞',
+ 'name': '战天剑帝',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301165/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '黑眼白发',
+ 'name': '诸天最强大BOSS',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/278/278218/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '千里牧尘',
+ 'name': '霸天武魂',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/26/26008/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '领衔主演I秘方',
+ 'name': '魂之泰斗',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301618/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '狮子东',
+ 'name': '生生不灭',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/6/6729/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '我是李木米',
+ 'name': '吾家上仙是只鸟',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291162/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '李墨白',
+ 'name': '我成了家族老祖宗',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298076/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '热血辣椒',
+ 'name': '无限升级之最强武魂',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/25/25195/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '墨乡',
+ 'name': '炮台法师',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/288/288270/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '金银花露',
+ 'name': '大小剑师',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303417/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '懒鸟',
+ 'name': '农夫凶猛',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/294/294897/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '上门豪婿',
+ 'name': '小说凌天辰桑语溪',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/286/286474/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '冶山熊',
+ 'name': '玄幻：我一剑重回十万年前',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303577/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '唐家三少',
+ 'name': '终极斗罗',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/280/280581/'}
+2020-11-07 14:03:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '无色定',
+ 'name': '方外志异',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295199/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '乌贼宝宝',
+ 'name': '我的丹田有饕餮',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297402/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '铁马飞桥',
+ 'name': '太荒吞天诀',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289696/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '杨鸿钧',
+ 'name': '养殖凶猛',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298277/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '小鲜鱼儿',
+ 'name': '真想吃口饱饭',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295166/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': 'L同学',
+ 'name': '当反派真是太爽了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300407/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '龙不相',
+ 'name': '王牌大剑圣',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/290/290964/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '夏炎炎',
+ 'name': '神能大风暴',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/114/114439/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '风凌天下',
+ 'name': '左道倾天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295016/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '太九',
+ 'name': '造化神宫',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/30/30108/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '空神',
+ 'name': '修罗丹神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/282/282245/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '孤魂少爷',
+ 'name': '反派至尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289799/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '茅台镇白酒',
+ 'name': '序列之王',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304353/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '蓝庭',
+ 'name': '玄武裂天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/278/278118/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '木易宁',
+ 'name': '寻找异能之主',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297464/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '空间监察银月',
+ 'name': '提督，你好',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273023/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '王蔡蔡',
+ 'name': '当反派逆袭成主角',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300348/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '冬天爬华山',
+ 'name': '我真是掌教大老爷',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291904/'}
+2020-11-07 14:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_2.html>
+{'author': '执笔天涯',
+ 'name': '万古第一杀神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276700/'}
+2020-11-07 14:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_3.html> (referer: https://www.quanben.net/list/1_2.html)
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '露两手',
+ 'name': '最强吞噬升级',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277554/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '荒野大刀客',
+ 'name': '无敌的我又要转世重修了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297411/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': 'xiao少爷',
+ 'name': '不死武皇',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/274/274545/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '聚焰成',
+ 'name': '天革',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277419/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '柳一条',
+ 'name': '我真要逆天啦',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/259/259594/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '雷文D维克萨斯',
+ 'name': '光灵行传',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/7/7537/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '流照星',
+ 'name': '开局就剑道无敌了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303441/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '么么',
+ 'name': '天下无敌',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277333/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '风无痕',
+ 'name': '修炼者实在太友好了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300089/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '何无恨',
+ 'name': '剑破九天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/58/58746/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '黑色毛衣',
+ 'name': '重生弃少归来',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/274/274209/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '金仓',
+ 'name': '弑神赤龙',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289810/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '风青阳',
+ 'name': '万古第一神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/280/280476/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '欲圆',
+ 'name': '铁血幽魂',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298123/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '玉蝙蝠',
+ 'name': '风浪幽歌',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298794/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '萧瑾瑜',
+ 'name': '剑道第一仙',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299916/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '乾泽',
+ 'name': '我才不是毒奶呢',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298670/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '陈多疑',
+ 'name': '开局签到修真套路王',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301161/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '汉朝天子',
+ 'name': '战锤神座',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273177/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '一目了然',
+ 'name': '我欲断天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/278/278487/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '一剑清新',
+ 'name': '逆剑狂神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/27/27595/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '刀纸',
+ 'name': '我的无限怪兽分身',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/275/275467/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '童园无忌',
+ 'name': '神域帝宗',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291073/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '霄韩',
+ 'name': '陵夭',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298415/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '猫老大的道',
+ 'name': '风雷神帝传',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/193/193487/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '纸鸢诉',
+ 'name': '我真不是修仙天才啊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303516/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '洞天神光',
+ 'name': '都市帝皇仙医',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303809/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '金仓',
+ 'name': '仙界奇主',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289386/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '酒池醉',
+ 'name': '群史争霸',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297483/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '狗狍子',
+ 'name': '这个皇子真无敌',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298669/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '醉清风本尊',
+ 'name': '女神的全能鉴宝师',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277565/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '丁琳冉',
+ 'name': '夫君听说你命里缺点我',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303734/'}
+2020-11-07 14:03:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '风雨电',
+ 'name': '谁能比我惨',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296903/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '西门陌陌',
+ 'name': '超级宗门系统',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303677/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '神仙谎',
+ 'name': '师兄请多关照',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297746/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '第一神',
+ 'name': '万古天帝',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273239/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '莫晓苏',
+ 'name': '将武生：武家庶女别太毒',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/255/255794/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '醉梦红辰',
+ 'name': '圣骨传',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/253/253161/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '仙妖',
+ 'name': '易修乾坤',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291867/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '逆风潜行',
+ 'name': '萧楠传',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304432/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '西门飘血',
+ 'name': '万界仙王',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/120/120715/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '老鸡吃蘑菇',
+ 'name': '全世界都不知道我多强',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298472/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '林月初',
+ 'name': '氪金女仙',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/287/287597/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '偷白菜的顾家小墨',
+ 'name': '我在十万游戏世界无敌了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298410/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '莫默',
+ 'name': '武炼巅峰',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/2/2782/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '映丽桃花',
+ 'name': '史上最难开启系统',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273811/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '一滴江湖泪',
+ 'name': '星魂剑魄',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300264/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '孤独一根烟',
+ 'name': '武极天外天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298810/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '一步临凡',
+ 'name': '每天签到一个新物种',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301800/'}
+2020-11-07 14:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_3.html>
+{'author': '氪金欧皇',
+ 'name': '我在万界送外卖',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277269/'}
+2020-11-07 14:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_4.html> (referer: https://www.quanben.net/list/1_3.html)
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '少爷不太冷',
+ 'name': '九极战神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273129/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '汉宝',
+ 'name': '恶魔就在身边',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/155/155499/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '幻想中的疯子',
+ 'name': '元武传纪',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296573/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '玉箫令',
+ 'name': '女帝成神指南',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304488/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '八斧巡抚',
+ 'name': '我穿成了小说昏君大反派',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300184/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '荼郁.QD',
+ 'name': '我让世界变异了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276818/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '灵零玖',
+ 'name': '玄幻：我的师弟都成了大佬',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304002/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '风轻扬',
+ 'name': '凌天战尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/33/33894/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '逆风的纸鸢',
+ 'name': '穿书后恶毒女配从良了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300309/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '古城散人',
+ 'name': '神邸之门',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300682/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '摸底牌',
+ 'name': '潜行追凶',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273939/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '五十七五七',
+ 'name': '超越狂暴升级',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/33/33214/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '山原',
+ 'name': '贩夫全神录',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299824/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '解剖老师',
+ 'name': '神器大道',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273712/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '姽婳晴雨',
+ 'name': '农园医锦',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273687/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '纯情犀利哥',
+ 'name': '绝世邪神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276568/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '洪荒之力',
+ 'name': '盖世武神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/275/275291/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '红枣泡枸杞',
+ 'name': '妖魔当道',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296367/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '明月夜色',
+ 'name': '箭魔',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/13/13909/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '枫叶12号',
+ 'name': '仙武神皇',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/285/285468/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '饮料配汉堡',
+ 'name': '当世界拥有异能之日',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296030/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '爱吃素的小徐',
+ 'name': '镇神司',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295776/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '烧烤不配啤酒',
+ 'name': '天的尽头',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296507/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '影月谷',
+ 'name': '修仙战神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298769/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '爱吃苹果和香蕉',
+ 'name': '诸族之战',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304515/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '青鸾峰上',
+ 'name': '一剑独尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/275/275415/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '剑尊',
+ 'name': '叶玄叶灵',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304519/'}
+2020-11-07 14:03:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '叶灵叶玄',
+ 'name': '剑临诸天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303739/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '疯橘子',
+ 'name': '武逆焚天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/7/7984/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '朝昔',
+ 'name': '我的双眼变异了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297565/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '嘭咔嚓',
+ 'name': '烂尾王朝',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277336/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '0尘',
+ 'name': '我是元素掌控者',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303738/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '乱世TICH',
+ 'name': '模拟修仙传',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300279/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': 'x欲碎',
+ 'name': '执剑斩春秋',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301411/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '断桥残雪',
+ 'name': '我真是星球最高长官',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303737/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '破风剑客',
+ 'name': '我能召唤华夏英杰',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295145/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '封灵云',
+ 'name': '星空炼神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/135/135553/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '老三的左手',
+ 'name': '百花大帝',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276462/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '信仰即正义',
+ 'name': '米奈希尔之力',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/141/141109/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '江水东流',
+ 'name': '镇世仙尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/293/293434/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '明月之舞',
+ 'name': '逍遥皇子俏皇妃',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/290/290903/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '风羽飞扬',
+ 'name': '邪灵战神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/278/278553/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '黑暗神帝',
+ 'name': '灵元灭世',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/287/287832/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '颓废的阑珊',
+ 'name': '我的系统异能',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296928/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '纯情犀利哥',
+ 'name': '绝世邪神（邪御天娇）',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276038/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '只是小虾米',
+ 'name': '武逆',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/11/11153/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '风知威仪',
+ 'name': '三千铁骑纵横诸天',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303712/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '超级小胖',
+ 'name': '玉帝叫我来直播',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/145/145477/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '凤凰山下汉丰湖',
+ 'name': '大明佛',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/97/97312/'}
+2020-11-07 14:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_4.html>
+{'author': '二木七',
+ 'name': '祖宗在上',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/285/285840/'}
+2020-11-07 14:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_5.html> (referer: https://www.quanben.net/list/1_4.html)
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': 'MS芙子',
+ 'name': '神医弃女：鬼帝的驭兽狂妃',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276028/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '梁家三少',
+ 'name': '不灭武尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/5/5835/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '邵羽',
+ 'name': '九域剑帝',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/28/28504/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '夜行仙',
+ 'name': '弥天记',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300198/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '第五个烟圈',
+ 'name': '狂武战尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/275/275221/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '简单钢笔',
+ 'name': '神魔因果',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/67/67076/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '乱',
+ 'name': '牧龙师',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291237/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '锦黎',
+ 'name': '墨少贤妻放肆宠',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/288/288781/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '言下九泉',
+ 'name': '药神赘婿',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300675/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '爱吃宵夜',
+ 'name': '九世剑仙',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301352/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '渔樵看海',
+ 'name': '我的召唤物可以学技能',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297271/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '百里龙虾',
+ 'name': '绝代神主',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/25/25843/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '王特图度',
+ 'name': '劫生宝鉴',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298510/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '六月州',
+ 'name': '原来我是隐世高人',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303513/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '爱潜水的章鱼',
+ 'name': '中世纪的猎魔人',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296918/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '这有什么好写的',
+ 'name': '侠恋仙游之佳期如梦',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296478/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '持剑定衡',
+ 'name': '制衡守护',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299124/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '吴杰超',
+ 'name': '无限先知',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/83/83178/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': 'J神',
+ 'name': '开局签到荒古圣体',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/295/295782/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '相思梓',
+ 'name': '魅医倾城：逆天宝宝腹黑爹',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/229/229241/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '古栋',
+ 'name': '丹师剑宗',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/274/274936/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '君墨悠',
+ 'name': '我有一座诸天万界穿梭门',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303724/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '天意留香',
+ 'name': '至尊神魔',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/275/275699/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '刘小偶',
+ 'name': '叫我女神大人',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303760/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '抱走咸鱼',
+ 'name': '玄武灵异传',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304495/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '二更一言',
+ 'name': '大汉海贼空军',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299859/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '杉若繁星',
+ 'name': '有神如此',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298328/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '鱼水漓',
+ 'name': '乾坤之匙',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/221/221637/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '梦中安眠',
+ 'name': '漫威之怪物猎人大世界',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277295/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '夜如归',
+ 'name': '快穿之被大佬盯上了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/290/290712/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '伴云来的风',
+ 'name': '奇门圣尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300311/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '大艺星星',
+ 'name': '阿京',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296331/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '东月真人',
+ 'name': '谁掉的技能书',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297948/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '小袆仙',
+ 'name': '蔫安离辛',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304504/'}
+2020-11-07 14:03:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '我吃面包',
+ 'name': '武神至尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/274/274942/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '夏清茗',
+ 'name': '魔尊他超凶',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/283/283230/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '卷土',
+ 'name': '最初进化',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/285/285707/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '巡游书生',
+ 'name': '生活系御兽师',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298335/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '津萨达瑞庆',
+ 'name': '布衣青年闯天下',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300150/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '臭猪胖乎乎',
+ 'name': '我能看见战斗力',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/94/94994/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '雨伶伶',
+ 'name': '穿越西游之这个妖精有点盐',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301085/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '阎ZK',
+ 'name': '我在幕后调教大佬',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/294/294958/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '混沌果',
+ 'name': '无敌从长生开始',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/278/278358/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '鱼和肉',
+ 'name': '因为怕痛所以全点防御力了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298379/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '寞然回首',
+ 'name': '神凰不为徒',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291715/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '82年的点点',
+ 'name': '神医邪妻：帝尊大人求翻牌',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298707/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '天唐余林',
+ 'name': '封神阴阳',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304016/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '香辣虾球',
+ 'name': '乙女的上升法则',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298366/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '为甚么的',
+ 'name': '权游从领主爆兵系统开始',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301701/'}
+2020-11-07 14:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_5.html>
+{'author': '水一更',
+ 'name': '太虚圣祖',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/134/134382/'}
+2020-11-07 14:03:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_6.html> (referer: https://www.quanben.net/list/1_5.html)
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '黑袍',
+ 'name': '天命道尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277697/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '就是喜欢吃肉',
+ 'name': '从西游开始练习反套路',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301357/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '雪鸾歌',
+ 'name': '天才神医宠妃',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/224/224363/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '稀饭橡皮糖',
+ 'name': '无极天圣',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301156/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '风狂笑',
+ 'name': '不死邪神',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277627/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '策马笑天下',
+ 'name': '皇天战尊',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/272/272727/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '千斤顶',
+ 'name': '就这样修仙了',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298709/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '楠烟生北渚',
+ 'name': '家有萌徒养成中',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303781/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '浩瀚之渊',
+ 'name': '嫡妃惊华：一品毒医',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289047/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '点爷01',
+ 'name': '绝境长城上的王者',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/124/124366/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '棒打小鸟',
+ 'name': '封印祖师爷',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300642/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '蓝天无尘',
+ 'name': '九星奇门决',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298326/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '吃辣条上瘾',
+ 'name': '大帝之召唤千军',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303924/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '白衣十二',
+ 'name': '玄元录',
+ 'pub_date': '11-07',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301699/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '雪参',
+ 'name': '三界主宰',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/272/272883/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '牧狐',
+ 'name': '超维术士',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/20/20790/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '日每一万神成',
+ 'name': '我怎么当上了皇帝',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/285/285591/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '亚舍罗',
+ 'name': '心界之主',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301786/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '扑街仔的梦想',
+ 'name': '我摊牌了，我比以前更妖孽',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296412/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '小玉狐',
+ 'name': '侯门嫡女如珠似玉',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303916/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '发烧的雪人',
+ 'name': '幻世圣尊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300178/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '虚尘',
+ 'name': '斗天武神',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276535/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '快喝热水',
+ 'name': '玄幻：开局奖励一百连抽',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303851/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '干担面',
+ 'name': '四圣诛天传',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289727/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '江湖三鱼',
+ 'name': '狂暴的光明牧师',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296459/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '李沧笙',
+ 'name': '匹夫出山',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303922/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '粥逗异人',
+ 'name': '魔道剑魂师',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300288/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '显钟怀雅',
+ 'name': '携父成神录',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300194/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '暮雨尘埃',
+ 'name': '万古第一武神',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303624/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '梅染衣',
+ 'name': '小师叔超强却有拖延症',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301460/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '江山流灼',
+ 'name': '绝世药师：逆天废柴二小姐',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296360/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '浊世倾心',
+ 'name': '乱世成圣',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/274/274444/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '枫霜',
+ 'name': '放开那只妖宠',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/286/286930/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '夏蝉公子听',
+ 'name': '鬼田斋祭',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303951/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '为轻尘',
+ 'name': '末世最强回收系统',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/289/289335/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '炫荒',
+ 'name': '从宝莲灯开始的聊天群',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/282/282403/'}
+2020-11-07 14:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '虾米XL',
+ 'name': '我对钱没有兴趣',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297304/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '长戟大兜2',
+ 'name': '超凡贵族',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/38/38598/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '独孤求醉',
+ 'name': '龙魂战尊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/279/279444/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '元峻道人',
+ 'name': '王者大陆and荣耀联盟',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304022/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '马一角',
+ 'name': '原始部落大冒险',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/13/13954/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '黑桃十叁',
+ 'name': '这个和尚种田就变强',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297837/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '飞雀夺杯',
+ 'name': '系统的超级宗门',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/261/261181/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '荒芜3',
+ 'name': '如何做一块合格的垫脚石',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301038/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '遥看远山',
+ 'name': '七十七号事务所',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304467/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '拈花一叶',
+ 'name': '天道天骄',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/5/5626/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '南有道',
+ 'name': '溯源仙迹',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299952/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '大火力小铳',
+ 'name': '原来他们都是我徒弟',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298795/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '接卡口',
+ 'name': '千山独行',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/135/135408/'}
+2020-11-07 14:03:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_6.html>
+{'author': '古月澜风',
+ 'name': '逆天毒妃：邪王，缠上身',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298000/'}
+2020-11-07 14:03:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_7.html> (referer: https://www.quanben.net/list/1_6.html)
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '蜀狂人',
+ 'name': '武道霸主',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/28/28263/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '剑苍云',
+ 'name': '镇世武神',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/146/146332/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '笙不平',
+ 'name': '重生为凤：战神王爷，请上榻',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298674/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '兰小q吖',
+ 'name': '妃扬跋扈：重生嫡女好妖娆',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296632/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '已更新八章',
+ 'name': '这个系统实在太给力',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297139/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '很难得',
+ 'name': '逆袭从当反派开始',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304436/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '拈花执剑',
+ 'name': '鬼医墨凰：魔尊大人，别撩我！',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/226/226907/'}
+2020-11-07 14:03:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '神级黑八',
+ 'name': '超凡药尊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/24/24997/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '情史尽成悔',
+ 'name': '我真的是反派啊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/280/280798/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '雨中鱼欲歌',
+ 'name': '我可以点化万物',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/288/288542/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '鬼墨龙云',
+ 'name': '吞噬进化：从一朵花开始',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303830/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '初念魔',
+ 'name': '铸逍遥',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273135/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '草上匪',
+ 'name': '魔神大明',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301506/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '庞布衣',
+ 'name': '重生异界当帝王',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/190/190711/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '万木峥嵘',
+ 'name': '凌天战神',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/279/279798/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '狗熊大侠',
+ 'name': '重修仙记',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304441/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '北燎',
+ 'name': '我是半妖',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/187/187577/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '雨暮浮屠',
+ 'name': '帝世无双',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/276/276223/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '赵六郎',
+ 'name': '都市绝品狂尊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277449/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '逆剑千秋',
+ 'name': '大道玄途',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296908/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '智圣小马贼',
+ 'name': '我独仙行',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/275/275735/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '东方雪漠萧',
+ 'name': '弦月至尊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301654/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '笔书千秋',
+ 'name': '召唤之绝世帝王',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/285/285416/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '孤辰雨',
+ 'name': '噬天为帝',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/216/216379/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '橙鲫撕蚶',
+ 'name': '此道非仙亦非魔',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291409/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '美酒与妖',
+ 'name': '妖孽哪里走',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303621/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '猪三不',
+ 'name': '基因大时代',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300091/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '心忆添翼',
+ 'name': '元灵法则',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/273/273495/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '素芝斓缕',
+ 'name': '玄御归心',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304485/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '旁人马',
+ 'name': '迟到魔王的奶爸人生',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/124/124928/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '七栾',
+ 'name': '龙神至尊',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/114/114492/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '很甜的咸鱼',
+ 'name': '夺魂之主',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297034/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '剑意心莲',
+ 'name': '无敌辣条系统',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/114/114659/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': 'zhttty',
+ 'name': '洪荒历',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/280/280046/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '北冥鱼不飞',
+ 'name': '神话之最强召唤',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/292/292260/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '浠浠传奇',
+ 'name': '林深见鹿君何处',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/290/290671/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '软桃子',
+ 'name': '重生八零：肥妻才是家中宝',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/296/296220/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '墨衣如旧',
+ 'name': '万古第一狂帝',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291827/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '二哈传说',
+ 'name': '战锤王座',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/282/282098/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '道三生',
+ 'name': '无尽海图',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/292/292165/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '疯狂升级',
+ 'name': '无敌疯狂兑换系统',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/227/227811/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '夭草儿',
+ 'name': '神秘伪先生的迷魂记',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304350/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '墨嵐',
+ 'name': '师妹今天翻车了吗',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301646/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '萱草花雨',
+ 'name': '镇鬼高校之八宫蛇影',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/297/297849/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '爱吃大包子',
+ 'name': '权国',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/5/5920/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '葛浅',
+ 'name': '别拿金丹不当大能',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304438/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '齐可休',
+ 'name': '芝加哥1990',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/274/274648/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '我很会吃',
+ 'name': '国师大人的暖萌小徒弟',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/300/300385/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '牧已',
+ 'name': '阅读封神系统',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/236/236117/'}
+2020-11-07 14:03:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_7.html>
+{'author': '帝剑一',
+ 'name': '惊天剑帝',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/87/87796/'}
+2020-11-07 14:03:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.quanben.net/list/1_8.html> (referer: https://www.quanben.net/list/1_7.html)
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '连山易子',
+ 'name': '拜见君子',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/281/281277/'}
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '二师兄八戒',
+ 'name': '超级特战兵王',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277484/'}
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '新丰',
+ 'name': '从精神病院走出的强者',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291353/'}
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '柒瑾懿',
+ 'name': '九州纵横录',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299896/'}
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '孟婆汤有点甜',
+ 'name': '朱楼异志',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/303/303869/'}
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '红眼白乌鸦',
+ 'name': '开局签到捡破烂成神系统',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301671/'}
+2020-11-07 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '醋溜包菜',
+ 'name': '西游之神级熊孩子',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/304/304499/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '过水看娇',
+ 'name': '我有一座赶海屋',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/281/281346/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '璃舟',
+ 'name': '重生枭宠：江少的傲娇狂妻',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298055/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '非砂',
+ 'name': '重生后给前夫当嫂嫂',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/301/301427/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '竹上猪猪',
+ 'name': '高调王',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/288/288210/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '长生月下雪',
+ 'name': '霜重九',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/299/299893/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '切开的柠檬',
+ 'name': '挂机死神就能变强',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/291/291091/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '爱睡觉懒人',
+ 'name': '碰到异类就变强',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/298/298165/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '会摔跤的熊猫',
+ 'name': '剑骨',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/277/277300/'}
+2020-11-07 14:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.quanben.net/list/1_8.html>
+{'author': '江白衣',
+ 'name': '道听',
+ 'pub_date': '11-06',
+ 'statue': '连载',
+ 'type': '[玄幻小说]',
+ 'url': 'https://www.quanben.ne/286/286883/'}

@@ -1,0 +1,188 @@
+
+'''
+爬虫分类：
+
+通用 / 聚焦 /   增量  / 深度 爬虫
+
+
+第一节：
+    爬虫步骤：
+    网页抓取  数据提取   数据存储
+
+
+    http协议：
+    应用层  协议     tcp/ip  4 层    7 层 的 是 osi 协议
+
+
+    https    s    位于 传输层
+
+
+    什么是 http 协议   面试题 ？
+
+    http协议： 基于 tcp/ip 协议，位于应用层。
+
+
+    https   s  位于传输层。  传输的是  密文。
+
+
+
+    Requests
+
+    原则上 不用 解码
+
+
+    post  get  区别
+
+
+    get  携带参数   ？  键值对
+
+
+    post  提交数据 两种数据
+        1. form  地址栏 不显示
+        2.  发送 json 数据  poload
+
+
+    数据量
+
+    get  有限
+
+    post  无限的
+
+
+    '''
+    # 基本Get 请求  先用response.text   response.content.encoding()
+
+    # response.apparent_encoding
+
+
+IP 代理：
+
+
+    免费：
+
+    发现你是爬虫，把IP  给封禁，，若多台电脑共用一个ip.影响特别大
+
+    使用 代理ip .封禁代理ip
+
+     付费ip：
+
+
+    蘑菇代理
+
+    验证代理 是否有效
+
+
+    订单 号，，  请求 禁止跳转 ，，  print 状态码
+
+    try:
+
+    except:
+
+网站代码
+'''
+import requests
+
+# 蘑菇代理的隧道订单
+appKey = "T1BVYVVNe*******eTQ1Mmdq"
+
+# 蘑菇隧道代理服务器地址
+ip_port = 'secondtransfer.moguproxy.com:9001'
+
+proxy = {"http": "http://" + ip_port,"https": "https://" + ip_port}
+headers = {
+  "Proxy-Authorization": 'Basic '+ appKey,
+  "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0) Gecko/20100101 Firefox/6.0",
+  "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4"}
+r = requests.get("https://api.ip.sb/ip", headers=headers, proxies=proxy,verify=False,allow_redirects=False)
+print(r.status_code)
+print(r.content)
+if r.status_code == 302 or r.status_code == 301 :
+    loc = r.headers['Location']
+    print(loc)
+    url_f = loc
+    r = requests.get(url_f, headers=headers, proxies=proxy, verify=False, allow_redirects=False)
+    print(r.status_code)
+    print(r.text)
+
+'''
+
+cookie     位于 本地
+浏览器   存储量是有限的   不安全
+
+session(service )
+
+服务器   存储 用户信息     安全   占用 资源
+
+一个 session  在客户端 对应有  一个    session_id   ,session 存于 cooike  中
+
+如何解决 跨域问题：
+        浏览器    jsonp
+
+session  依赖与  cookie  ,,cookie  被删除  session  会失效
+
+
+
+模拟登录 两种 方式   一是  cookie  二是 session
+
+
+
+xpath
+
+
+
+
+'''
+并非所有的请求都带有 content-lenght
+
+带进度的模板
+
+with requests.get(url+'sum',headers = headers) as request:
+    html =request.text
+    print(html)
+    # time.sleep(5)
+    filname =f'第{page}页'
+    #  不一定有 这个参数
+    print(request.headers)
+    # content_size = int(request.headers['content-length'])
+    # with open("./page/%s_%s.html"%(filname,name),'w',encoding='utf-8') as f:
+    #     n = 1
+    #     chunk_size = 1024
+    #     for chunk in request.iter_content(chunk_size):
+    #         loaded = n*content_size/content_size
+    #         f.write(chunk)
+    #         loaded_rated = round(loaded * 100, 2)
+    #         print('已经下载{0:}'.format(loaded_rated))
+    #         # time.sleep(5)
+
+
+
+'''
+
+
+小结： 请求头 不一定 全部按照浏览器的  全部  复制，   全部复制，有时候  xpath  会 提取不到数据
+
+百度贴吧 就是 一个 案例  day 02
+
+
+保存：
+
+# 方式一：txt
+        filename = './data/tieba_'+name+".txt"
+        # a  添加一次 保存一次 append  追加
+        with open(filename,'a',encoding='utf-8') as f:
+            f.write(title+","+url+","+writter1+','+num+'\n')
+
+    #  .CSV
+        csvfilename = './data/tieba_'+name+".csv"
+        with codecs.open(csvfilename,'a',encoding='utf-8') as f:
+            #生成一个写的对象
+            wr = csv.writer(f)
+            wr.writerow([title,url,writter1,num])
+
+
+re  替换
+
+            new_page =new_page[0].get('href')
+            pat = re.compile(r'(\d+\.html)')
+            new_page = pat.sub(new_page,cate_url)
+            print('new_page:',new_page)

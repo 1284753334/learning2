@@ -1,0 +1,44 @@
+
+<!--课件 方法二   把 函数 作为 uri 组件 进行编码    不会对 ascii码 字母   和 数字  进行加密 和 解密   -->
+
+<!--decodeURIComponent   解码 -->
+
+<script type="text/javascript">
+var a = encodeURIComponent("http://www.sina.com.cn")
+document.write(a)
+document.write("<br />")
+document.write(decodeURIComponent(a))
+//  预计 结果不会发生改变 （字母 ） 补：  //  发生转义
+document.write("<br />")
+
+
+var b = encodeURIComponent(",/?:@&=+$#")
+document.write(b)
+document.write("<br />")
+document.write(decodeURIComponent(b))
+document.write("<br />")
+//  同上    改：符号
+
+
+var a = encodeURIComponent("盛典前夕这场座谈会，定了一个重大国家战略")
+document.write(a)
+document.write("<br />")
+//  解密 出现了乱码
+document.write(decodeURIComponent(a))
+document.write("<br />")
+
+//  汉字 完全发生转义
+
+//  变得不认识
+</script>
+
+
+<!--
+结果如下：
+http%3A%2F%2Fwww.sina.com.cn
+http://www.sina.com.cn
+%2C%2F%3F%3A%40%26%3D%2B%24%23
+,/?:@&=+$#
+%E9%90%A9%E6%B6%98%E5%90%80%E9%8D%93%E5%B6%85%EE%98%BA%E6%9D%A9%E6%AC%8F%E6%BA%80%E6%90%B4%D1%86%E7%9A%A5%E6%B5%BC%E6%B0%BE%E7%B4%9D%E7%80%B9%E6%B0%AB%E7%B0%A1%E6%B6%93%E2%82%AC%E6%B6%93%EE%81%88%E5%99%B8%E6%BE%B6%D1%83%E6%B5%97%E7%80%B9%E8%88%B5%E5%9E%AC%E9%90%A3%EF%BF%BD
+
+-->

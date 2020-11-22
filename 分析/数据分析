@@ -1,0 +1,82 @@
+
+
+
+数据分析概论：
+    DIkW 体系   data  information  knowledge  wisdom
+
+    数据逻辑性  对接起来  不同的人 处理方式 不一样
+
+    预测未来   智慧
+
+    遇到 跟多 常见的反爬
+pandas  基于 numpuy   擅长 多维数组（矩阵）的处理
+
+numpy  基于c 语言    大型矩阵
+
+
+数据存储之CSV
+  默认  逗号 分割
+CSV（Comma-Separated Values,逗号分隔值）是存储表格数据的常用文件格式。
+很多应用都支持CSV格式，因为它很简洁
+ 和Python一样，CSV里留白（whitespace）也是很重要的：每一行都用一个换行符分隔，列与列之间用逗号分隔（因此也叫逗号分隔符）。
+CSV文件还可以用Tab字符或其他字符分隔行，但是不太常见，用的不多。
+
+两种 加载 方式
+方法数据存储之CSV
+
+
+
+数据加载np.loadtxt()
+import numpy as np
+filename = "./presidential_polls.csv"
+data_arr = np.loadtxt(filename, #需要打开的文件名
+    delimiter = "," ,#文件的分隔符
+    #skiprows = 1， #可以选择调过开头指定的行
+    dtype=str, #数据是按编码后的字符串格式存储
+    usecols = (3,17,18,19),#表示读取文件里的列的索引位置
+    )
+
+数据存储之CSV
+数据加载np. genfromtxt()方法
+import numpy as np
+filename = "./presidential_polls.csv"
+data_arr = np.genfromtxt(filename, #需要打开的文件名
+    delimiter = "," ,#文件的分隔符
+    dtype=str, #数据按字符串格式存储，不进行bytes编码
+    usecols = (3,17,18,19),#表示读取文件里列索引位置
+    )
+print(data_arr)
+
+
+ndarray数组创建
+NumPy数组是一个多维的数组对象（矩阵），称为ndarray，具有矢量算术运算能力，并具有执行速度快和节省空间的特点。
+
+注意：ndarray的下标从0开始，且数组里的所有元素必须是相同类型
+
+
+
+
+
+
+正态分布   u方  小   瘦高
+                大   矮胖
+通过随机抽样 (numpy.random) 生成随机数据。
+np.random.rand()
+
+
+
+随机样本位于[0, 1)中，rand固定区间0.0 ~ 1.0
+np.random.randn()
+随机样本是从标准正态分布中返回  一个或多个样本值。 
+
+
+
+ndarray的随机创建
+import numpy as np
+# 生成指定维度大小（3行4列）的随机多维浮点型数据（二维），rand固定区间0.0 ~ 1.0
+arr = np.random.rand(3, 4)
+print(arr)
+print(type(arr))
+
+
+

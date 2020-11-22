@@ -1,0 +1,58 @@
+
+'''
+爬虫分类：
+
+通用 / 聚焦 /   增量  / 深度 爬虫
+
+
+第一节：
+    爬虫步骤：
+    网页抓取  数据提取   数据存储
+
+
+    http协议：
+    应用层  协议     tcp/ip  4 层    7 层 的 是 osi 协议
+
+
+    https    s    位于 传输层
+
+
+    什么是 http 协议   面试题 ？
+
+    http协议： 基于 tcp/ip 协议，位于应用层。
+
+
+    https   s  位于传输层。  传输的是  密文。
+
+
+
+    Requests
+
+    原则上 不用 解码
+
+
+    post  get  区别
+
+
+    get  携带参数   ？  键值对
+
+
+    post  提交数据 两种数据
+        1. form  地址栏 不显示
+        2.  发送 json 数据  poload
+
+
+    数据量
+
+    get  有限
+
+    post  无限的
+
+
+    '''
+    # 基本Get 请求  先用response.text   response.content.encoding()
+
+    # response.apparent_encoding
+
+
+
