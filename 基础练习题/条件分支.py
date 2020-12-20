@@ -5,6 +5,7 @@
 
 print('hellO Unity5')
 '''
+import os
 import random
 import time
 
@@ -5275,6 +5276,211 @@ t = Test()
 '''
 # print('hello python')
 
+# 面向对象高级
+'''
+160:
+写一个计算机系统功能的接口：
+     数据计算的功能
+     存储数据的功能
+     打印数据的功能
+     显示数据的功能
+     设计Windows系统来实现计算机系统功能
+     设计Solaris系统来实现计算机系统功能
+     设计Mac系统来实现计算机系统功能"
+
+'''
+
+
+
+
+
+'''
+161.定义一个形状接口，这个接口有两个方法：计算形状的面积和周长，
+创建形状接口的两个实现类：矩形和圆形。写一个方法用一个参数接收几个矩形和圆形的实例，计算并打印它们的面积和周长。
+不足：没有实现 一个方法 用一个参数接收 几个矩形和圆的实例
+class shape:
+    def __init__(self,long = 1,width = 1,r = 1):
+        self.long = long
+        self.width = width
+        self.r = r
+    #     矩形的面积
+    def rec_squire(self):
+        squire = self.long * self.width
+        return squire
+    #  矩形的周长
+    def rec_longs(self):
+        longs = (self.long+self.width)*2
+        return  longs
+
+    def cir_squire(self):
+        squire =3.14*self.r**2
+        return  squire
+
+    def cir_longs(self):
+        longs = self.r*2*3.14
+        return  longs
+
+# s = shape(long= 2,width=3,)
+# print(s.rec_longs())
+# print(s.rec_squire())
+#
+# c = shape(r =4)
+# print(c.cir_longs())
+# print(c.cir_squire())
+if __name__ == '__main__':
+    d = shape()
+    d.cir_squire()
+    # d.cir_longs()
+
+
+'''
+
+
+
+
+'''
+162.
+有一个接口：门铃报警器（DoorBellAlarm）
+接口里有一个方法：WelcomeAlarm() 用于向刚进门的客人致欢迎词。
+编写中国银行、工商银行、交通银行、建设银行这四个类，这四个类均继承自银行类，都实现了门铃报警器接口。
+编写一个方法实现只要传入一个银行对象，报警器就会自适应的报出：XXX银行欢迎您的到来！
+
+
+class Bank:
+    def speaker(self):
+        print('银行欢迎您的到来！')
+
+class ChinaBank(Bank):
+    def speaker(self):
+        print('中国银行欢迎您的到来！')
+
+class ICBC(Bank):
+    def speaker(self):
+        print('工商中国银行欢迎您的到来！')
+
+class TrafficBank(Bank):
+    def speaker(self):
+        print('交通银行欢迎您的到来！')
+
+
+class  ConstructionBank(Bank):
+    def speaker(self):
+        print('建设中国银行欢迎您的到来！')
+
+
+
+
+class DoorBellAlarm:
+    def __init__(self,a):
+        self.a =a
+    def WelcomeAlarm(self):
+        if isinstance(self.a, Bank):
+            t = a.speaker()
+
+        if isinstance(self.a,ConstructionBank):
+            t = a.speaker()
+
+        if isinstance(self.a, TrafficBank):
+            t = a.speaker()
+
+        if isinstance(self.a, ICBC):
+            t = a.speaker()
+
+        if isinstance(self.a, ChinaBank):
+             t = a.speaker()
+
+        return t
+
+
+if __name__ == '__main__':
+    a = Bank()
+    door = DoorBellAlarm(a)
+    door.WelcomeAlarm()
+
+
+'''
+
+
+
+'''
+163.
+
+有一个接口：测温器
+接口里有一个方法：用于测量各种物体的温度。
+编写水、人、蛇这三个类，这三个类均实现测温器。
+编写一个方法实现只要传入一个物体或动物，测温器：当前温度：xx摄氏度！
+
+class water():
+    def speaker(self):
+        print('当前水温：xx摄氏度！')
+
+class people():
+    def speaker(self):
+        print('当前体温：xx摄氏度！')
+
+class Sneak():
+    def speaker(self):
+        print('它的温度：xx摄氏度！')
+
+def bofang(a):
+    if isinstance(a,water):
+        t = a.speaker()
+
+    if isinstance(a,people):
+        t = a.speaker()
+
+    if isinstance(a,Sneak):
+        t = a.speaker()
+
+    return  t
+
+# w = water()
+# w = people()
+w = Sneak()
+bofang(w)
+
+
+'''
+
+'''
+164.
+
+"创建一个玩家接口，玩家有名称、生命值、魔法值、攻击力、生存状态5个属性；生命值、魔法值、攻击力、生存状态属性都是只读的；
+生命值、魔法值、攻击力的初值分别为800、100、50；玩家类有一个攻击方法：public void Attack(Player player)。
+玩家类有两个实现类：野蛮人和魔法师。野蛮人每次攻击造成的伤害在[攻击力-10] 到[攻击力+10]之间（这个伤害值是一个随机值），
+另外野蛮人有一个被动技能（不消耗魔法），有25%的几率产生1次暴击（每4次攻击随机产生1次暴击），
+每次暴击产生的伤害是原来的3倍；魔法师每次攻击造成的伤害在攻击力的80%~100%之间（也是一个随机数），
+魔法师每次攻击消耗18点魔法，它会额外减少对方12%的生命值。现在分别创建一个野蛮人、魔法师对象，
+让他们进行PK，就是你打我一下，我打你一下，直到有一方死亡为止；野蛮人先攻击。"
+
+'''
+
+
+class player():
+    def __init__(self,status,name,blood=800,magic=100,attack=50,):
+        self.name = name
+        self._blood = blood
+        self._magic = magic
+        self._status = status
+        self.attack = attack
+
+
+    def Attack(self):
+        pass
+
+
+class waild(player):
+
+    def Attack(self):
+        pass
+
+
+class Fashi(player):
+    def Attack(self):
+        pass
+
+
+
 
 
 
@@ -6052,18 +6258,40 @@ while T <=10:
 #
 # print(joseph(5, 1, 2))
 
+# 231
+'''
+获取文件基本信息
+1  获取文件的大小
+2  获取文件扩展名
+3  获取文件创建时间
+4  获取文件最后一次修改时间
+5  获取文件名禁止使用的字符
+'''
+'''
+import  os
+t = os.path.getsize('E:\codeworkpace\project\learning\基础练习题\日期.py')
+# print(t)
 
-t = 0
-s = 0
+name = os.path.splitext('E:\codeworkpace\project\learning\基础练习题\日期.py')[-1]
+# print(name)
+import os,time
+t= time.ctime(os.stat('E:\codeworkpace\project\learning\基础练习题\文件.py').st_mtime) #文件的(最后)修改时间
+s = time.ctime(os.stat("E:\codeworkpace\project\learning\基础练习题\文件.py").st_ctime) #文件的创建时间
 
 
-
-if t> 3:
-    t = 1
-
-
-
-
-
-
-
+'''
+'''
+创建和删除文件
+1  创建和删除文件
+2  生成随机文件名或文件夹名
+Guid的使用
+3  建立临时文件
+4  根据日期动态建立文件
+'''
+# os.mkdir('c')
+# # with open ("./a/555.txt",'w') as f:
+# #     f.write('33')
+# # os.remove('666.txt')
+# with open('77.txt','w') as f:
+#     pass
+# # os.removedirs('c')
